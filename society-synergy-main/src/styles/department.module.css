@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:light');
+
+.parentDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  color: white;
+  position: absolute;
+  z-index: 2;
+}
+
+.aboutDept {
+  /* height: 50vh; */
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deptTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  margin: 2rem 0 2.5rem 0;
+}
+.deptTitle h1 {
+  color: #ff6559;
+  font-family: Josefin Sans;
+  font-size: 2.6rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.deptTitle h4 {
+  font-family: Josefin Sans;
+  color: gainsboro;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.deptDesc {
+  font-family: Josefin Sans, light;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 26px;
+  width: 70vw;
+  padding-bottom: 7.5vh;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.deptTitle img {
+  height: 190px;
+  margin: 0 50px 0 0;
+  width: 190px;
+}
+
+.deptDesc p {
+  font-size: 1.3rem;
+  color: gainsboro;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 26px;
+  font-family: Josefin Sans, light;
+}
+.section {
+  display: grid;
+  margin-bottom: 50px;
+  width: 100vw;
+}
+
+.cardSection {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly !important;
+  margin-bottom: 30px;
+  row-gap: 40px;
+  width: inherit;
+}
+
+.cardSectionTeams {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  row-gap: 40px;
+  color: white;
+}
+
+.section .cardSection div {
+  /* margin-inline: 5px; */
+}
+
+.sectionHeading {
+  font-family: Josefin Sans;
+  font-size: 2.4rem;
+  font-weight: 700;
+  justify-self: center;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.butoons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin: 10px 0 10px 0;
+}
+.btn{
+  background-color: transparent;
+  border: 1px solid #ff6559;
+  border-radius: 5px;
+  color: #ff6559;
+  cursor: pointer;
+  font-family: Josefin Sans;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 5px 5px;
+  margin: 0 10px 0 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ff6559;
+  color: white;
+}
+
+.rsvpbtn{
+  background-color: transparent;
+  border: 1px solid #ff6559;
+  border-radius: 5px;
+  color: #ff6559;
+  cursor: pointer;
+  font-family: Josefin Sans;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 10px 5px 5px 5px;
+  margin: 0 10px 0 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.rsvpbtn:hover {
+  background-color: #ff6559;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .butoons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn {
+    margin: 5px 0 5px 0;
+  }
+  .aboutDept {
+    /* height: 50vh; */
+  }
+  .deptTitle {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+    margin-top: 11px;
+  }
+  .deptTitle > div > h1 {
+    font-size: 3rem;
+    white-space: wrap;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .deptTitle > div > h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .deptTitle > div >div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .deptTitle img {
+    margin: 0;
+    height: 120px;
+    width: 120px;
+  }
+  .deptDesc {
+    flex-direction: column;
+    width: 87vw;
+  }
+  .deptDesc div {
+    display: none;
+  }
+  .deptDesc p {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
